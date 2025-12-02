@@ -13,21 +13,19 @@ class MyColumnWidgetApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text("Column Widget")),
         body: Container(
+          width: double.infinity,
+          height: double.infinity,
           decoration: BoxDecoration(color: Colors.orange),
           child: Flex(
-            direction: Axis.vertical,
+            direction: Axis.horizontal,
             children: [
               Expanded(
-                flex: 1,
-                child: Container(color: Colors.blue),
-              ),
-              Expanded(
-                flex: 8,
-                child: Container( color: Colors.blueGrey),
+                flex: 5,
+                child: Container(width: 100, height: 100, color: Colors.blue),
               ),
               Expanded(
                 flex: 1,
-                child: Container(color: Colors.red),
+                child: Container(width: 100, height: 100, color: Colors.red),
               ),
             ],
           ),

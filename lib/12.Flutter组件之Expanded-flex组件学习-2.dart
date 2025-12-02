@@ -19,15 +19,15 @@ class MyColumnWidgetApp extends StatelessWidget {
             children: [
               Expanded(
                 flex: 1,
-                child: Container(color: Colors.blue),
+                child: Container(height: 100, color: Colors.blue),
               ),
               Expanded(
-                flex: 8,
-                child: Container( color: Colors.blueGrey),
+                flex: 5,
+                child: Container(height: 100, color: Colors.blueGrey),
               ),
               Expanded(
                 flex: 1,
-                child: Container(color: Colors.red),
+                child: Container(height: 100, color: Colors.red),
               ),
             ],
           ),

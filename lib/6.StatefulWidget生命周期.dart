@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(MyStatefulApp());
 }
 
@@ -11,8 +11,7 @@ class MyStatefulApp extends StatefulWidget {
   }
 }
 
-
-class _MyStatefulApp extends State<MyStatefulApp>{
+class _MyStatefulApp extends State<MyStatefulApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,20 +23,13 @@ class _MyStatefulApp extends State<MyStatefulApp>{
           centerTitle: true,
           title: Text("头部区域"),
         ),
-        body: Center(
-          child: Text("中部区域"),
-        ),
+        body: Center(child: Text("中部区域")),
         bottomNavigationBar: Container(
           height: 80,
           color: Colors.brown,
-          child: Center(
-            child: Text("底部区域"),
-          ),
+          child: Center(child: Text("底部区域")),
         ),
       ),
     );
   }
-
 }
-
-
